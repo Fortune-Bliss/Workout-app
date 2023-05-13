@@ -39,8 +39,13 @@ const TopNavigation = () => {
           </Text>
         </View>
       </View>
-      <View style={{ marginTop: 10 }}>
-        <Ionicons name="notifications-outline" size={24} color="white" />
+      <View style={{ marginTop: 8 }}>
+        <Ionicons
+          name="notifications-outline"
+          size={24}
+          color="white"
+          style={{ backgroundColor: "grey", padding: 5, borderRadius: 17 }}
+        />
       </View>
     </View>
   );
@@ -189,9 +194,10 @@ export default function MainScreen({ navigation }) {
           onPressIn={() => navigation.navigate("Workout")}
           onPress={() => setBgColor("white")}
         >
-          <Feather
-            name="search"
+          <MaterialIcons
+            name="fitness-center"
             size={24}
+            color="lightgreen"
             style={{
               color: bgColor === "white" ? "lightgreen" : "white",
               fontWeight: bgColor === "white" ? "700" : "400",

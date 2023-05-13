@@ -15,6 +15,11 @@ export default function Authnavigation() {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen
+          name="Workout"
+          component={WorkoutScreen}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
           name="WelcomeScreen"
           component={WelcomeScreen}
           options={{ headerShown: false }}
@@ -22,11 +27,6 @@ export default function Authnavigation() {
         <Stack.Screen
           name="Main"
           component={MainScreen}
-          options={{ headerShown: false }}
-        />
-        <Stack.Screen
-          name="Workout"
-          component={WorkoutScreen}
           options={{ headerShown: false }}
         />
         <Stack.Screen
